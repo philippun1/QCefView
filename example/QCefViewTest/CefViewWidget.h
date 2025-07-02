@@ -42,6 +42,8 @@ protected:
 
   void mousePressEvent(QMouseEvent* event) override;
 
+  void focusInEvent(QFocusEvent* event) override;
+
 private:
   void updateMask();
 

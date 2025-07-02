@@ -113,6 +113,11 @@ CefViewWidget::mousePressEvent(QMouseEvent* event)
 #endif
 }
 
+void CefViewWidget::focusInEvent(QFocusEvent* event)
+{
+  QCefView::focusInEvent(event);
+}
+
 void
 CefViewWidget::updateMask()
 {
